@@ -1,7 +1,8 @@
 require 'test_helper'
 
-class SpymeTest < ActiveSupport::TestCase
-  test "truth" do
-    assert_kind_of Module, Spyme
+class SpymeTest < ActionDispatch::IntegrationTest
+  test "post to spyme should return success" do
+    post '/spyme/locations'
+    assert_response 201
   end
 end
