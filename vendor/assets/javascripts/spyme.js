@@ -3,18 +3,18 @@
   
   var $ = window.jQuery || window.Zepto || window.$;
 
-  var success = function(position) {
-    var latitude = position.coords.latitude;
-    var longitude = position.coords.longitude;
+  var success = function(location) {
+    var latitude = location.coords.latitude;
+    var longitude = location.coords.longitude;
 
     var params = {
-      position: {
+      location: {
         latitude: latitude,
         longitude: longitude
       }
     };
 
-    $.post('/spyme/positions',params).done(function(data) {
+    $.post('/spyme/locations',params).done(function(data) {
       console.log(data);
     });
   

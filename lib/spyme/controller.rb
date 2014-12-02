@@ -6,8 +6,8 @@ module Spyme
       helper_method :current_position
     end
 
-    def current_position
-      Spyme::Model::Position.from_session(session)
+    def current_location
+      Spyme::Model::Location.from_session(session)
     end
   end
 end

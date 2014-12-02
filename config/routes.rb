@@ -3,5 +3,5 @@ Rails.application.routes.draw do
 end
 
 Spyme::Engine.routes.draw do
-  resources :positions, only: [:create]
+  resources :locations, only: [:create]
 end

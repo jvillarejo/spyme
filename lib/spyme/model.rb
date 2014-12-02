@@ -1,6 +1,6 @@
 module Spyme
   module Model
-    class Position
+    class Location
       include ActiveModel::Model
 
       attr_accessor :latitude, :longitude
