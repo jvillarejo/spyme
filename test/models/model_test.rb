@@ -17,8 +17,8 @@ class ModelTest < ActiveSupport::TestCase
     assert_equal @location.longitude, 32.14424
   end
 
-  test 'google_map_coords should give the right query value' do
-    assert_equal @location.google_map_coords, '54.34212, 32.14424'
+  test 'as a string should give the right query value' do
+    assert_equal @location.to_s, '54.34212, 32.14424'
   end
 
   test 'to_hash should give the right hash value' do

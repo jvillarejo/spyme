@@ -8,12 +8,16 @@ module Spyme
       validates :latitude, presence: true
       validates :longitude, presence: true
 
-      def google_map_coords
+      def to_s
         "#{latitude}, #{longitude}"
       end
 
       def to_hash
         { latitude: latitude, longitude: longitude }
+      end
+
+      def coords
+        [latitude,longitude]
       end
 
       class << self

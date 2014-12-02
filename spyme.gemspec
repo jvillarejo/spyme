@@ -14,7 +14,7 @@ Gem::Specification.new do |s|
   s.description = "With spyme you cant store and access user browser geolocated position and use it whenever you want."
   s.license     = "MIT"
 
-  s.files = Dir["{app,config,db,lib}/**/*", "MIT-LICENSE", "Rakefile", "README.rdoc"]
+  s.files = Dir["{app,config,lib,vendor}/**/*", "MIT-LICENSE", "Rakefile", "README.rdoc"]
   s.test_files = Dir["test/**/*"]
 
   s.add_dependency "rails", "~> 4.1"

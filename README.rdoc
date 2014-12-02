@@ -2,3 +2,8 @@
 
 This project rocks and uses MIT-LICENSE.
 
+Add gem 'spyme' to Gemfile
+
+Add //= require spyme.js
+
+Access Location object through helper method current_location
