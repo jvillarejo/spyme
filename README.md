@@ -1,6 +1,6 @@
 # Spyme
 
-Track your visits location using the Geolocation Browser API easily
+Track your visits location using the **Geolocation Browser API** easily
 
 Location is stored in the session, it doesn't generate any model so you persist it in anyway you like.
 
