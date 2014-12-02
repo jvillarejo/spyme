@@ -7,11 +7,11 @@ require "spyme/version"
 Gem::Specification.new do |s|
   s.name        = "spyme"
   s.version     = Spyme::VERSION
-  s.authors     = ["TODO: Your name"]
-  s.email       = ["TODO: Your email"]
-  s.homepage    = "TODO"
-  s.summary     = "TODO: Summary of Spyme."
-  s.description = "TODO: Description of Spyme."
+  s.authors     = ["Juani Villarejo"]
+  s.email       = ["contac@jonvillage.com"]
+  s.homepage    = "https://github.com/jvillarejo/spyme"
+  s.summary     = "A Rails plugin that tracks and store browser geolocation position"
+  s.description = "With spyme you cant store and access user browser geolocated position and use it whenever you want."
   s.license     = "MIT"
 
   s.files = Dir["{app,config,db,lib}/**/*", "MIT-LICENSE", "Rakefile", "README.rdoc"]
