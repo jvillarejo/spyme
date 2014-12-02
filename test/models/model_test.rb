@@ -14,4 +14,16 @@ class ModelTest < ActiveSupport::TestCase
     assert_equal @position.latitude, 54.34212
     assert_equal @position.longitude, 32.14424
   end
+
+  test 'google_map_coords should give the right query value' do
+    @position = Spyme::Model::Position.from_session(latitude: '54.34212', longitude: '32.14424')
+
+    assert_equal @position.google_map_coords, '54.34212, 32.14424'
+  end
+
+  test 'to_hash should give the right hash value' do
+    @position = Spyme::Model::Position.from_session(latitude: '54.34212', longitude: '32.14424')
+
+    assert_equal @position.to_hash, { latitude: 54.34212, longitude: 32.14424 }
+  end
 end

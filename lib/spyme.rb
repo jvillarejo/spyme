@@ -1,5 +1,6 @@
 require "spyme/engine"
 require "spyme/model"
+require "spyme/controller"
 
 module Spyme
 end

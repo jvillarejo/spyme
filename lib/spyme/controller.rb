@@ -7,7 +7,7 @@ module Spyme
     end
 
     def current_position
-      Position.from_session(session)
+      Spyme::Model::Position.from_session(session)
     end
   end
 end
