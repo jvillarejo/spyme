@@ -11,7 +11,7 @@ Gem::Specification.new do |s|
   s.email       = ["contac@jonvillage.com"]
   s.homepage    = "https://github.com/jvillarejo/spyme"
   s.summary     = "A Rails plugin that tracks and store browser geolocation position"
-  s.description = "With spyme you cant store and access user browser geolocated position and use it whenever you want."
+  s.description = "With spyme you can store and access user browser geolocated position and use it whenever you want."
   s.license     = "MIT"
 
   s.files = Dir["{app,config,lib,vendor}/**/*", "MIT-LICENSE", "Rakefile", "README.rdoc"]
