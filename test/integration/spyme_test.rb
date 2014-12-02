@@ -13,8 +13,8 @@ class SpymeTest < ActionDispatch::IntegrationTest
   test "post to spyme should store coords" do 
     post '/spyme/positions', @params
 
-    assert_equal session[:latitude], 64.24145
-    assert_equal session[:longitude], 75.35536
+    assert_equal session[:latitude], '64.24145'
+    assert_equal session[:longitude], '75.35536'
   end
 
   test 'post to spyme should not throw bad request when empty' do 
