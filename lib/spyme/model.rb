@@ -5,8 +5,8 @@ module Spyme
 
       attr_accessor :latitude, :longitude
 
-      validates :latitude, presence: true
-      validates :longitude, presence: true
+      validates :latitude, presence: true, numericality: { greater_than: 0.0 }
+      validates :longitude, presence: true, numericality: { greater_than: 0.0 }
 
       def to_s
         "#{latitude}, #{longitude}"

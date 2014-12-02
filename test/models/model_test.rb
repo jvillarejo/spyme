@@ -12,6 +12,18 @@ class ModelTest < ActiveSupport::TestCase
     assert_equal @location.valid?, false
   end
 
+  test 'location should be invalid when empty attributes' do 
+    @location = Spyme::Model::Location.new
+
+    assert_equal @location.valid?, false
+  end
+
+  test 'location should be invalid when empty session' do
+    @location = Spyme::Model::Location.from_session({})
+
+    assert_equal @location.valid?, false
+  end
+
   test 'initialize from session should give correct number attributes' do 
     assert_equal @location.latitude, 54.34212
     assert_equal @location.longitude, 32.14424
