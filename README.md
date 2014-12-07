@@ -6,7 +6,7 @@ Location is stored in the session, it doesn't generate any model so you can pers
 
 You get:
 
-- **better geolocalization** - Browser geolocalization has much better exactness than IP-based geocoding.
+- **better geolocation** - Browser geolocation has much better exactness than IP-based geocoding.
 - **persist it the way you want it** - As Spyme doesn't define any persisting model, you can map it to your model in any way you like.
 
 ## How it works
