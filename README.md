@@ -77,3 +77,7 @@ Everyone is encouraged to help improve this project. Here are a few ways you can
 - [Report bugs](https://github.com/jvillarejo/spyme/issues)
 - Fix bugs and [submit pull requests](https://github.com/jvillarejo/spyme/pulls)
 - Suggest or add new features
+
+
+[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/jvillarejo/spyme/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
+
