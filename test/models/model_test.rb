@@ -24,6 +24,26 @@ class ModelTest < ActiveSupport::TestCase
     assert_equal @location.valid?, false
   end
 
+  test 'location should be valid at negative boundries' do
+    @location = Spyme::Model::Location.new(latitude: -90.0, longitude: -180.0)
+    
+    assert_equal @location.valid?, true
+  end
+
+  test 'location should be valid at positive boundries' do
+    @location = Spyme::Model::Location.new(latitude: 90.0, longitude: 180.0)
+    
+    assert_equal @location.valid?, true
+  end
+
+  test 'location should be invalid exceeding negative boundries' do
+    loc_lat = Spyme::Model::Location.new(latitude: -90.00001, longitude: 130.0)
+    loc_lon = Spyme::Model::Location.new(latitude: 45.0, longitude: -180.00001)
+    
+    assert_equal loc_lat.valid?, false
+    assert_equal loc_lon.valid?, false
+  end
+
   test 'initialize from session should give correct number attributes' do 
     assert_equal @location.latitude, 54.34212
     assert_equal @location.longitude, 32.14424
