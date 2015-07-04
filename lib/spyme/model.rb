@@ -5,8 +5,8 @@ module Spyme
 
       attr_accessor :latitude, :longitude
 
-      validates :latitude, presence: true, numericality: { greater_than: 0.0 }
-      validates :longitude, presence: true, numericality: { greater_than: 0.0 }
+      validates :latitude, presence: true, numericality: { greater_than_or_equal_to: -90, less_than_or_equal_to: 90 }
+      validates :longitude, presence: true, numericality: { greater_than_or_equal_to: -180, less_than_or_equal_to: 180 }
 
       def to_s
         "#{latitude}, #{longitude}"
@@ -22,10 +22,10 @@ module Spyme
 
       class << self
         def from_session(session) 
-          latitude = session[:latitude] || ''
-          longitude = session[:longitude] || ''
+          lat = session[:latitude]
+          lon = session[:longitude]
 
-          self.new(latitude: latitude.to_f, longitude: longitude.to_f)
+          self.new(latitude: lat.presence && lat.to_f, longitude: lon.presence && lon.to_f)
         end
       end
     end
