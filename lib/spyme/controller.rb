@@ -3,7 +3,7 @@ module Spyme
     extend ActiveSupport::Concern
 
     included do
-      helper_method :current_position
+      helper_method :current_location
     end
 
     def current_location
