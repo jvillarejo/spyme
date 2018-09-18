@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    spyme (0.0.1)
+    spyme (0.1.2)
       rails (>= 4.1)
 
 GEM
